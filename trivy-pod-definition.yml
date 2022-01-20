@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: trivy-pod
+  labels:
+    app: trivy
+    type: security 
+spec:
+  containers:
+    - name: trivy
+      image: aquasec/trivy
